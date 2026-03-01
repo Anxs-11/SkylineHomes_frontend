@@ -5,7 +5,7 @@ import { FieldValues } from "react-hook-form";
 import Form from "components/common/Form";
 
 const EditProperty = () => {
-    const { data: user } = useGetIdentity({
+    const { } = useGetIdentity({
         v3LegacyAuthProviderCompatible: true,
     });
     const [propertyImage, setPropertyImage] = useState({ name: "", url: "" });

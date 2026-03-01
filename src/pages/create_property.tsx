@@ -5,7 +5,6 @@ import { useForm } from "@refinedev/react-hook-form";
 
 // import { useNavigate } from 'react-router-dom'
 import Form from 'components/common/Form'
-import axios from 'axios';
 const CreateProperty = () => {
   const { data: user } = useGetIdentity();
  

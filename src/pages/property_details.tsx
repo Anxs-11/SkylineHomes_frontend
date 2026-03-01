@@ -20,7 +20,7 @@ const PropertyDetails = () => {
 
     const { data, isLoading, isError } = queryResult;
     
-    const {propertyDetails,creater,avatar,name,email,allProperties} = data?.data ?? {};
+    const {propertyDetails,avatar,name,email,allProperties} = data?.data ?? {};
     
     
     if (isLoading ) {
@@ -302,6 +302,7 @@ const PropertyDetails = () => {
                     <Stack>
                         <img
                             src="https://serpmedia.org/scigen/images/googlemaps-nyc-standard.png?crc=3787557525"
+                            alt="property location map"
                             width="100%"
                             height={306}
                             style={{ borderRadius: 10, objectFit: "cover" }}

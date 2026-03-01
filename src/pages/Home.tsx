@@ -5,7 +5,6 @@ import {
   PropertyCard,
   PropertyReferrals,
   TotalRevenue,
-  TopAgent
 } from "components"
 import { Box,Typography,Stack } from '@mui/material'
 import { ColorModeContext } from "../contexts/color-mode";
@@ -13,9 +12,8 @@ import { ColorModeContext } from "../contexts/color-mode";
 
 
 const Home = () => {
-  const { mode, setMode } = useContext(ColorModeContext);
-  let color="#fcfcfc";
-  {mode === "dark" ? color="#272727" : color="#FFFFFF"}
+  const { mode } = useContext(ColorModeContext);
+  const color = mode === "dark" ? "#272727" : "#FFFFFF";
   const { data, isLoading, isError } = useList({
         resource: "properties",
         config: {
