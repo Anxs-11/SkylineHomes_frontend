@@ -7,9 +7,8 @@ import {PieChartProps} from 'interfaces/home'
 import { ColorModeContext } from "../../contexts/color-mode";
 
 const PieChart = ({title,value,series,colors}:PieChartProps) => {
-  const { mode, setMode } = useContext(ColorModeContext);
-  let color="#fcfcfc";
-  {mode === "dark" ? color="#161616" : color="#F3F5FB"}
+  const { mode } = useContext(ColorModeContext);
+  const color = mode === "dark" ? "#161616" : "#F3F5FB";
   return (
 
     <Box
